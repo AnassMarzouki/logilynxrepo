@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route, Link} from "react-router-dom"
 import Pricing from './pricing';
-import Contact from './contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
