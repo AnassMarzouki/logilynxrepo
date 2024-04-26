@@ -23,6 +23,10 @@ code {
   padding-top: 7em;
 }
 
+.active-nav {
+  border-bottom: 3px solid #603F83FF;
+}
+
 .logo-navbar {
   border-bottom: 1px solid #9d9d9e;
   background-color: white;
@@ -45,6 +49,10 @@ code {
   gap:2em;
   list-style: none;
 }
+
+.navbar > a {
+  text-decoration: none;
+}
 .welcome-section {
   padding-bottom: 3em;
 }
@@ -56,7 +64,14 @@ code {
   color:#603F83FF;
 }
 
-
+.footer {
+  text-align: center;
+  background-color:#282c34;
+  color:aliceblue;
+  font-weight: bold;
+  padding-top: 3px;
+  padding-bottom: 9px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -1,7 +1,8 @@
 export default function Portfolio () {
     return (
         <div>
-            <h2>See our Works:</h2>
+            <h3>Here are some of our works</h3>
+            
         </div>
     )
 }
