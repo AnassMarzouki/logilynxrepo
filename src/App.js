@@ -1,12 +1,10 @@
 import Layout from './components/layout';
 import WelcomeMessage from './welcome';
-import Portfolio from './portfolio';
 import Pricing from './pricing';
 import Faq from './faq';
 import Contact from './contact';
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Products from './products';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductsLayout from './components/productsLayout';
 
 
