@@ -8,7 +8,7 @@ export default function WelcomeMessage (){
                 <button className="button">Get Started !</button>
             </div>
             <div className="area-image">
-                <img src={bgImage}></img>
+                <img src={bgImage} alt=""></img>
             </div>
         </div>
     )
