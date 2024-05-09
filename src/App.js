@@ -3,8 +3,9 @@ import WelcomeMessage from './welcome';
 import Pricing from './pricing';
 import Faq from './faq';
 import Contact from './contact';
+import PageNotFound from './notfound';
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import ProductsLayout from './components/productsLayout';
 
 
@@ -17,10 +18,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
+          <Route path="*" element = {<PageNotFound />} />
           <Route path="/" element={<WelcomeMessage />} />
           <Route path="pricing" element={<Pricing />}/>
-          <Route path="about" element={<Faq />}/>
-          <Route path="portfolio" element={<Contact />}/>
+          <Route path="FAQs" element={<Faq />}/>
+          <Route path="contact-us" element={<Contact />}/>
           
           <Route path="products" element ={<ProductsLayout />}>
 

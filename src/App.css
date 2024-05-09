@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: aliceblue;
+  background-color: #eeeeee;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -53,14 +53,60 @@ code {
 .navbar > a {
   text-decoration: none;
 }
-.welcome-section {
+
+.welcome-section, .pack-pricing, .faq-section {
+  padding-top: 4em;
   padding-bottom: 3em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: row;
+
+}
+
+
+.area-text {
+  max-width: 50%;
+  margin: 0;
+}
+
+.area-text > h1 {
+  font-size: 3em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.area-text > button {
+  margin-left: 8em;
+}
+
+.area-image {
+  max-width: 50%;
+}
+.area-image > img {
+  width: 600px;
+  height: 362px;
+  object-fit:fill;
+  
+}
+
+.button {
+  background-color: #7c35b3;
+  cursor: pointer;
+  font-size: 1.4rem;
+  border:none;
+  border-radius: 7px;
+  color: #eeeeee;
+  padding: 10px 20px;
 }
 .welcome-section > h1 {
   font-size: 3rem;
 }
 
-.welcome-section >h1> span {
+.area-text >h1> span {
   color:#603F83FF;
 }
 
@@ -72,6 +118,110 @@ code {
   padding-top: 3px;
   padding-bottom: 9px;
 }
+
+.pack-pricing {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pack-pricing > .extra:hover {
+  background-color: #e2e2e2;
+}
+
+.pack-pricing > .essential:hover {
+  background-color: #e2e2e2;
+}
+
+.pack-pricing > .plus:hover {
+  background-color: #e2e2e2;
+}
+.pack-pricing > .essential {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 16em;
+  border-top: 8px solid orange;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.pack-pricing > .essential > button {
+  background-color: orange;
+  color: white;
+  border:none;
+  border-radius: 5px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.pack-pricing > .plus {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 16em;
+  border-top: 8px solid rgb(16, 85, 235);
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.pack-pricing > .plus > button {
+  background-color: rgb(16, 85, 235);
+  color: white;
+  border:none;
+  border-radius: 5px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.pack-pricing > .extra {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  width: 16em;
+  border-top: 8px solid crimson;
+  border-radius: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+.pack-pricing > .extra > button {
+  background-color: crimson;
+  color: white;
+  border:none;
+  border-radius: 5px;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+.pricing-icons {
+  margin-bottom: 0;
+  margin-top: 0.3em;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.faq-section {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.faq-image > img {
+  padding-top: 5em;
+  width: 400px;
+}
+
+.answer-txt {
+  font-weight: lighter;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
