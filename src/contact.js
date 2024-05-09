@@ -8,15 +8,26 @@ export default function Contact () {
             </div>
 
             <div className="contact-form">
-                <form name="contact" method="POST" data-netlify="true">
-                    <label>Full name</label>
-                    <input type="text"></input>
-
-                    <TextField id="outlined-basic" label="Name" variant="outlined" type="text" required/>
-                    <TextField id="outlined-basic" label="Email" variant="outlined" type="email" required/>
-                    <button type="submit">Submit</button>
-
-                </form>
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                    <option value="leader">Leader</option>
+                    <option value="follower">Follower</option>
+                    </select></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
             </div>
         </div>
     )
