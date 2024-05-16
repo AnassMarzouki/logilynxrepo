@@ -1,4 +1,4 @@
-import faq from "./faq.png"
+import faq from "./faq.jpg"
 import * as React from 'react';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -22,23 +22,26 @@ export default function Faq () {
 
     return (
         <div className="faq-section">
-            <div className="questions">
-                <h1>Frequently Asked Questions</h1>
 
+            <div className="faq-image faq-image-mobile">
+                <img src={faq} alt="FAQ illustration"></img>
+            </div>
+
+            <div className="questions">
                         <List
                 sx={{ width: '100%', maxWidth: 760, bgcolor: 'background.paper' }}
                 component="div"
                 aria-labelledby="nested-list-subheader">
                     
                 <ListItemButton onClick={()=> setOn1.toggle()}>
-                    <ListItemText primary={questions[0].question} />
+                    <ListItemText primary={questions[0].question} sx={{fontWeight:"bold"}} />
                     {on1 ? <ExpandLess /> : <ExpandMore />}
                 </ListItemButton>
                 <Collapse in={on1} timeout="auto" unmountOnExit>
                     <List component="div" disablePadding>
                     <ListItemButton sx={{ pl: 4 }}>
 
-                        <ListItemText primary={questions[0].answer} className="answer-txt"/>
+                        <ListItemText primary={questions[0].answer} />
                     </ListItemButton>
                     </List>
                 </Collapse>
@@ -113,9 +116,7 @@ export default function Faq () {
 
             </div>
 
-        <div className="faq-image">
-          <img src={faq} alt="FAQ illustration"></img>
-        </div>
+        
 
         </div>
     )
